@@ -1,0 +1,92 @@
+.process-section {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.process-section h2 {
+  text-align: center;
+  color: #0f4c81;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.process-section p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+}
+
+.process-step-line {
+  position: absolute;
+  top: 35px;
+  left: 60%;
+  width: 80%;
+  height: 3px;
+  background: #dbeafe;
+  z-index: 0;
+}
+
+.process-step-circle {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #0f4c81;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 25px rgba(15, 76, 129, .2);
+}
+
+.process-step-circle svg {
+  width: 32px;
+  height: 32px;
+}
+
+.process-step-title {
+  margin-top: 18px;
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .process-section {
+    padding: 60px 6%;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-step-line {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .process-section {
+    padding: 50px 5%;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
