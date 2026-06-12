@@ -12,24 +12,6 @@ export default function Navbar() {
     setOpen(false);
   }, [location.pathname]);
 
-  const handleScrollTo = (id: string) => {
-    const scroll = () => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
-
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(scroll, 200);
-    } else {
-      scroll();
-    }
-
-    setOpen(false);
-  };
-
   return (
     <nav className="navbar">
       {/* LOGO */}
