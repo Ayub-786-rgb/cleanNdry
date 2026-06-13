@@ -20,7 +20,7 @@ export default function Hero() {
             Schedule Free Pickup
           </button>
 
-          <button className="hero-btn hero-btn-secondary" onClick={() => window.open('https://app.fabklean.com/', '_blank')} style={{ border: '2px solid #25d366', background: '#fff', color: '#25d366', cursor: 'pointer' }}>
+          <button className="hero-btn hero-btn-secondary" onClick={() => window.open('https://wa.me/7609851051?text=Hello%20Clean%20N%20Dry%2C%20I%27d%20like%20to%20schedule%20a%20pickup%20for%20my%20laundry.%20', '_blank')}>
             <span className="whatsapp-icon-wrapper">
               <FaWhatsapp size={16} />
             </span>
