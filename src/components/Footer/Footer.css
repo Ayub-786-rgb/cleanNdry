@@ -56,6 +56,28 @@
   gap: 8px;
 }
 
+.footer-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2e8f0;
+}
+
+.footer-whatsapp-link:hover {
+  color: #ffffff;
+}
+
+.whatsapp-icon-wrapper {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+}
+
 @media (max-width: 760px) {
   .footer {
     padding: 40px 5%;

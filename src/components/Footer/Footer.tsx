@@ -1,4 +1,5 @@
 import './Footer.css';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -26,7 +27,12 @@ export default function Footer() {
         <div className="footer-contact">
           <span>📍 Cuttack, India</span>
           <span>📞 <a href="tel:+917609851051">+91 7609851051</a></span>
-          <span>💬 <a href="https://wa.me/917609851051" target="_blank" rel="noreferrer">Chat on WhatsApp</a></span>
+          <span>
+            <a href="https://wa.me/7609851051?text=Hello%20Clean%20N%20Dry%2C%20I%27d%20like%20to%20schedule%20a%20pickup%20for%20my%20laundry.%20" target="_blank" rel="noreferrer" className="footer-whatsapp-link">
+              <span className="whatsapp-icon-wrapper"><FaWhatsapp size={16} /></span>
+              Chat on WhatsApp
+            </a>
+          </span>
         </div>
       </div>
 

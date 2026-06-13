@@ -15,17 +15,17 @@ export default function Hero() {
         <p>We Pick Up. We Clean. We Deliver.</p>
 
         <div className="hero-buttons">
-          <button className="hero-btn hero-btn-primary">
+          <button className="hero-btn hero-btn-primary" onClick={() => window.open('https://app.fabklean.com/', '_blank')}>
             <FaCalendarAlt />
             Schedule Free Pickup
           </button>
 
-          <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-            <button className="hero-btn hero-btn-secondary">
-              <FaWhatsapp size={20} color="#25D366" />
-              <span>Chat on WhatsApp</span>
-            </button>
-          </a>
+          <button className="hero-btn hero-btn-secondary" onClick={() => window.open('https://app.fabklean.com/', '_blank')} style={{ border: '2px solid #25d366', background: '#fff', color: '#25d366', cursor: 'pointer' }}>
+            <span className="whatsapp-icon-wrapper">
+              <FaWhatsapp size={16} />
+            </span>
+            <span>Chat on WhatsApp</span>
+          </button>
         </div>
 
         <div className="hero-features">

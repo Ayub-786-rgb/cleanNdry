@@ -56,7 +56,7 @@ export default function Navbar() {
 
       {/* ACTION BUTTON */}
       <div className="actions">
-        <button className="btn"><FaCalendarAlt style={{ marginRight: 8 }} />Schedule Free Pickup</button>
+        <button className="btn" onClick={() => window.open('https://app.fabklean.com/', '_blank')}><FaCalendarAlt style={{ marginRight: 8 }} />Schedule Free Pickup</button>
       </div>
     </nav>
   );
