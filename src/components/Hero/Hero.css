@@ -1,174 +1,262 @@
+.hero-swiper {
+  width: 100%;
+  min-height: 70vh;
+  touch-action: pan-y;
+}
+
+/* HERO SECTION */
 .hero-section {
-  min-height: 85vh;
+  min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 8%;
-  background: #f8fafc;
-  gap: 60px;
-  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 6% 24px;
+  background: #f7fbff;
 }
 
+.hero-section-alt {
+  background: #ffffff;
+}
+
+/* LEFT CONTENT */
 .hero-copy {
   flex: 1;
-  min-width: 320px;
   max-width: 600px;
 }
 
 .hero-copy h1 {
   font-size: 56px;
-  line-height: 1.1;
-  color: #1e293b;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  line-height: 1.05;
+  margin: 0 0 18px 0;
+  color: #111827; /* all black headline */
+  font-weight: 800;
+  letter-spacing: -1px;
+  max-width: 600px;
+}
+
+.hero-title {
+  max-width: 620px;
+}
+
+.hero-subtitle {
+  color: #111827; /* pure black for subtitle */
   font-weight: 800;
 }
 
-.hero-copy h1 span {
-  color: #0f4c81;
-}
-
-.hero-copy p {
-  font-size: 20px;
-  color: #25d366;
-  font-weight: 700;
+.hero-tagline {
+  margin: 18px 0 22px;
+  color: #475569;
+  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 35px;
+  max-width: 520px;
 }
 
+.bold-tagline {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* BRAND HIGHLIGHT */
+.brand-highlight {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;           /* white text */
+  padding: 6px 14px;
+  background: #0f4c81;   /* solid brand blue */
+  border-radius: 999px;  /* pill shape */
+  box-shadow: 0 6px 18px rgba(15, 76, 129, 0.25);
+  margin: 20px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: fit-content;    /* background hugs text */
+}
+
+/* THEME HIGHLIGHT (for offers and brand mentions) */
+.theme-highlight {
+  color: #0f4c81;
+  font-weight: 800;
+}
+
+/* GENERAL PARAGRAPH */
+.hero-copy p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 28px;
+  max-width: 500px;
+}
+
+/* BUTTONS */
 .hero-buttons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
+  min-width: 180px;
+  height: 48px;
+  padding: 0 18px;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 16px;
-  display: inline-flex;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
   align-items: center;
-  gap: 10px;
-  min-height: 54px;
   justify-content: center;
-}
-
-.hero-btn-primary,
-.hero-btn-secondary {
-  padding: 16px 34px;
+  gap: 10px;
+  transition: all 0.3s ease;
 }
 
 .hero-btn-primary {
   background: #0f4c81;
   color: #fff;
-  border: none;
-  box-shadow: 0 10px 25px rgba(15, 76, 129, 0.25);
+  box-shadow: 0 8px 20px rgba(15, 76, 129, 0.2);
 }
 
 .hero-btn-secondary {
-  background: #fff;
-  color: #25d366;
-  border: 2px solid #25d366;
-}
-
-.hero-features {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.hero-feature-pill {
-  background: #fff;
-  border: 1px solid #98e5aa;
-  padding: 12px 20px;
-  border-radius: 30px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #1f4330;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.hero-feature-pill-tick {
-  color: #25d366;
-  font-size: 16px;
-  line-height: 1;
-}
-
-.hero-feature-pill-text {
-  color: #1f4330;
-}
-
-.whatsapp-icon-wrapper {
-  width: 30px;
-  height: 30px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
   background: #25d366;
   color: #fff;
 }
 
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* FEATURES */
+.hero-features {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 14px 24px;
+  margin-top: 16px;
+}
+
+.hero-features span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hero-feature-icon {
+  color: #16a34a;
+  width: 18px;
+  height: 18px;
+}
+
+/* RIGHT IMAGE */
 .hero-image-wrapper {
   flex: 1;
-  min-width: 320px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-image {
+.hero-process-image {
   width: 100%;
-  max-width: 650px;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
 }
 
-@media (max-width: 900px) {
+/* SWIPER ARROWS */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #0f4c81;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
   .hero-section {
-    padding: 60px 6%;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 10px 5% 40px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
   }
 
   .hero-copy h1 {
     font-size: 46px;
   }
-}
-
-@media (max-width: 700px) {
-  .hero-section {
-    padding: 50px 5%;
-  }
-
-  .hero-copy h1 {
-    font-size: 36px;
-  }
 
   .hero-copy p {
     font-size: 18px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .hero-process-image {
+    max-width: 500px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 10px 20px 30px;
+    gap: 15px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-copy h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-copy p {
+    font-size: 17px;
+    max-width: 100%;
   }
 
   .hero-buttons {
     flex-direction: column;
-    gap: 14px;
+    width: 100%;
   }
 
-  .hero-btn-primary,
-  .hero-btn-secondary {
+  .hero-btn {
     width: 100%;
-    justify-content: center;
-    padding: 16px 20px;
+    min-width: unset;
   }
 
   .hero-features {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr;
+    text-align: left;
   }
 
-  .hero-feature-pill {
-    width: 100%;
-    justify-content: center;
+  .hero-process-image {
+    max-width: 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
 }

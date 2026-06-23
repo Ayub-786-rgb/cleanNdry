@@ -1,17 +1,19 @@
 .navbar {
-  height: 76px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6%;
+  padding: 0 4%;
   background: #0b234a;
   color: #fff;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* LOGO */
 .logo {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 1;
   color: #fff;
@@ -20,7 +22,7 @@
 /* MENU */
 .menu {
   display: flex;
-  gap: 34px;
+  gap: 20px;
   list-style: none;
   align-items: center;
   margin: 0;
@@ -31,14 +33,14 @@
 .menu a,
 .link-btn {
   text-decoration: none;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
   color: #d7e1ff;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 12px 6px;
+  padding: 8px 6px;
 }
 
 @media (max-width: 768px) {
@@ -57,14 +59,14 @@
 
 /* BUTTON */
 .actions .btn {
-  padding: 14px 24px;
-  border-radius: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
   border: none;
   background: #1f5dd1;
   color: white;
   cursor: pointer;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* HAMBURGER (hidden desktop) */
@@ -92,13 +94,13 @@
   .menu {
     display: none;
     position: absolute;
-    top: 76px;
+    top: 64px;
     left: 0;
     right: 0;
     flex-direction: column;
     background: #0b234a;
     width: 100%;
-    padding: 18px 20px;
+    padding: 14px 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 

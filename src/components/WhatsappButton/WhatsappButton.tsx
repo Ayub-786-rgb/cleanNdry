@@ -15,7 +15,7 @@ export default function WhatsappButton() {
       aria-label="WhatsApp"
       title="Chat on WhatsApp"
     >
-      <FaWhatsapp size={34} color="#ffffff" />
+      <FaWhatsapp size={28} color="#ffffff" />
     </a>
   );
 }
