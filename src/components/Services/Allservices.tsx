@@ -7,14 +7,7 @@ import homeCleaningImage from '../../assets/images/homecleaning.jpg';
 import corporateCleaningImage from '../../assets/images/office.jpg';
 import sofaCleaningImage from '../../assets/images/sofacleaning.jpg';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "./Services.css";
+import "./Allservices.css";
 
 
 const services = [
@@ -78,72 +71,38 @@ description:"Deep sofa cleaning service."
 ];
 
 
-export default function Services(){
+export default function AllServices(){
 
 return (
 
 <section className="services-section">
 
 
+<div className="services-header">
+
 <h2>
 Our Services
 </h2>
 
+<p>
+Professional laundry and cleaning solutions delivered to your doorstep
+</p>
 
-<Swiper
+</div>
 
-className="services-swiper"
 
-modules={[
-Autoplay,
-Pagination,
-Navigation
-]}
 
-navigation={true}
-
-spaceBetween={25}
-
-loop={true}
-
-speed={800}
-
-autoplay={{
-delay:2000,
-disableOnInteraction:false
-}}
-
-pagination={{
-clickable:true
-}}
-
-breakpoints={{
-
-0:{
-slidesPerView:1
-},
-
-768:{
-slidesPerView:2
-},
-
-1024:{
-slidesPerView:4
-}
-
-}}
-
->
+<div className="services-grid">
 
 
 {
 services.map((service)=>(
 
 
-<SwiperSlide key={service.title}>
-
-
-<div className="service-card">
+<div 
+className="service-card"
+key={service.title}
+>
 
 
 <div className="image-box">
@@ -156,13 +115,12 @@ alt={service.title}
 </div>
 
 
-
 <div className="service-content">
 
 
 <h3>
 
-<span className="service-icon">
+<span>
 {service.icon}
 </span>
 
@@ -187,15 +145,11 @@ Book Now
 </div>
 
 
-</SwiperSlide>
-
-
 ))
-
 }
 
 
-</Swiper>
+</div>
 
 
 </section>

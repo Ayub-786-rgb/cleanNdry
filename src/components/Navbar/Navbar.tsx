@@ -36,20 +36,14 @@ export default function Navbar() {
         </li>
 
         <li>
-          <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Services
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/process" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Process
-          </NavLink>
+         <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Services
+         </NavLink>
         </li>
 
         <li>
           <NavLink to="/benefits" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Benefits
+            Blogs
           </NavLink>
         </li>
       </ul>
