@@ -1,6 +1,14 @@
 import "./Process.css";
 import betterVisual from "../../assets/images/betterthan.png";
 
+import {
+  FaTruck,
+  FaMoneyBillWave,
+  FaMobileAlt,
+  FaTshirt,
+  FaHeadset
+} from "react-icons/fa";
+
 export default function Process() {
   return (
     <section className="better-section">
@@ -24,28 +32,38 @@ export default function Process() {
           <ul className="better-list">
 
             <li>
-              <span className="better-icon">🚚</span>
-              Free Pickup & Delivery
+              <FaTruck className="better-icon" />
+              <span className="better-text">
+                Free Pickup & Delivery
+              </span>
             </li>
 
             <li>
-              <span className="better-icon">💰</span>
-              Transparent Pricing
+              <FaMoneyBillWave className="better-icon" />
+              <span className="better-text">
+                Transparent Pricing
+              </span>
             </li>
 
             <li>
-              <span className="better-icon">📱</span>
-              Real-Time Order Tracking
+              <FaMobileAlt className="better-icon" />
+              <span className="better-text">
+                Real-Time Order Tracking
+              </span>
             </li>
 
             <li>
-              <span className="better-icon">🧺</span>
-              Quality Assurance & Garment Care
+              <FaTshirt className="better-icon" />
+              <span className="better-text">
+                Quality Assurance & Garment Care
+              </span>
             </li>
 
             <li>
-              <span className="better-icon">🤝</span>
-              Dedicated Customer Support
+              <FaHeadset className="better-icon" />
+              <span className="better-text">
+                Dedicated Customer Support
+              </span>
             </li>
 
           </ul>
