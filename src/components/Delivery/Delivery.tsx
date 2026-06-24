@@ -1,44 +1,56 @@
-import deliveryImage from "../../assets/images/delivery.png"; // replace with your actual image path
-import "../Card/Card.css";
-import './Delivery.css';
+import "./Delivery.css";
+import bestImage from "../../assets/images/BestDrycleaning.png";
 
 export default function Delivery() {
   return (
-    <section id="delivery" className="delivery-section">
-      <div className="delivery-image-wrapper">
-        <img
-          src={deliveryImage}
-          alt="Free Home Pickup & Delivery"
-          className="delivery-image"
-        />
-      </div>
+    <section className="best-section">
+      <div className="best-container">
 
-      <div className="delivery-content">
-        <h2>Free Home Pickup & Delivery</h2>
-
-        <p>Best Dry Cleaners In Your City With Free Home Pickup & Delivery.</p>
-
-        <div className="delivery-card-grid">
-          {[
-            { icon: "🚚", title: "Free Pickup", desc: "Doorstep convenience at no extra cost." },
-            { icon: "⚡", title: "Express Delivery", desc: "Fast turnaround for your garments." },
-            { icon: "💰", title: "Affordable Pricing", desc: "Quality service at fair rates." },
-          ].map((item) => (
-            <div key={item.title} className="card">
-              <div
-                style={{
-                  fontSize: "32px",
-                  color: "#2BB673",
-                  marginBottom: "12px",
-                }}
-              >
-                {item.icon}
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
-          ))}
+        <div className="best-image-wrapper">
+          <img
+            src={bestImage}
+            alt="Clean N Dry Services"
+            className="best-image"
+          />
         </div>
+
+        <div className="best-content">
+
+          <h2 className="best-title">
+            Best Dry Cleaners In Your City
+          </h2>
+
+
+
+          <ul className="best-list">
+            <li>
+              <span className="tick">✓</span>
+              Free Pickup & Delivery
+            </li>
+
+            <li>
+              <span className="tick">✓</span>
+              Fabric Safe Cleaning
+            </li>
+
+            <li>
+              <span className="tick">✓</span>
+              Quick Turnaround Time
+            </li>
+
+            <li>
+              <span className="tick">✓</span>
+              Affordable Pricing
+            </li>
+
+            <li>
+              <span className="tick">✓</span>
+              100% Customer Satisfaction
+            </li>
+          </ul>
+
+        </div>
+
       </div>
     </section>
   );

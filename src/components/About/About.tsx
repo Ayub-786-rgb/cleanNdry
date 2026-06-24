@@ -1,11 +1,59 @@
+import "./About.css";
+import aboutImage from "../../assets/images/About.png";
+
 export default function About() {
   return (
-    <section style={{ padding: "50px 20px" }}>
-      <h2>About Us</h2>
+    <section className="about-section">
 
-      <p>
-        We provide premium laundry and carpet cleaning services.
-      </p>
+      <h2 className="about-heading">
+        About Us
+      </h2>
+
+      <div className="about-container">
+
+        <div className="about-content">
+
+          <p>
+            Clean N Dry is a trusted laundry and dry cleaning brand
+            delivering premium fabric care through advanced cleaning
+            technology and doorstep convenience. With
+            <strong> 15+ Service Points</strong>,
+            <strong> 10,000+ Garments Processed</strong>, and a growing
+            community of satisfied customers, we are committed to
+            providing reliable, hygienic, and high-quality cleaning
+            solutions every day.
+          </p>
+
+          <div className="about-stats">
+
+            <div className="stat">
+              <h3>15+</h3>
+              <span>Service Points</span>
+            </div>
+
+            <div className="stat">
+              <h3>10K+</h3>
+              <span>Garments Cleaned</span>
+            </div>
+
+            <div className="stat">
+              <h3>100%</h3>
+              <span>Quality Focus</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="about-image">
+          <img
+            src={aboutImage}
+            alt="Clean N Dry"
+          />
+        </div>
+
+      </div>
+
     </section>
   );
 }
