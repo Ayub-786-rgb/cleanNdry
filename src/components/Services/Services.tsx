@@ -9,6 +9,7 @@ import sofaCleaningImage from '../../assets/images/sofacleaning.jpg';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,190 +17,133 @@ import "swiper/css/navigation";
 
 import "./Services.css";
 
-
 const services = [
-
-{
-title:"Laundry",
-icon:"🧺",
-image:laundryImage,
-description:"Fast wash and fold service with pickup and delivery."
-},
-
-{
-title:"Carpet Cleaning",
-icon:"🧹",
-image:carpetImage,
-description:"Deep carpet cleaning for fresh interiors."
-},
-
-{
-title:"Curtain Cleaning",
-icon:"🏠",
-image:curtainImage,
-description:"Professional curtain cleaning service."
-},
-
-{
-title:"Shoe Cleaning",
-icon:"👟",
-image:shoeImage,
-description:"Premium shoe cleaning and care."
-},
-
-{
-title:"Dry Cleaning",
-icon:"👔",
-image:dryCleaningImage,
-description:"Safe dry cleaning for your clothes."
-},
-
-{
-title:"Home Cleaning",
-icon:"✨",
-image:homeCleaningImage,
-description:"Complete home cleaning solution."
-},
-
-{
-title:"Corporate Cleaning",
-icon:"🏢",
-image:corporateCleaningImage,
-description:"Office and commercial cleaning."
-},
-
-{
-title:"Sofa Cleaning",
-icon:"🛋️",
-image:sofaCleaningImage,
-description:"Deep sofa cleaning service."
-}
-
+  {
+    title: "Laundry",
+    icon: "🧺",
+    image: laundryImage,
+    description: "Fast wash and fold service with pickup and delivery."
+  },
+  {
+    title: "Carpet Cleaning",
+    icon: "🧹",
+    image: carpetImage,
+    description: "Deep carpet cleaning for fresh interiors."
+  },
+  {
+    title: "Curtain Cleaning",
+    icon: "🏠",
+    image: curtainImage,
+    description: "Professional curtain cleaning service."
+  },
+  {
+    title: "Shoe Cleaning",
+    icon: "👟",
+    image: shoeImage,
+    description: "Premium shoe cleaning and care."
+  },
+  {
+    title: "Dry Cleaning",
+    icon: "👔",
+    image: dryCleaningImage,
+    description: "Safe dry cleaning for your clothes."
+  },
+  {
+    title: "Home Cleaning",
+    icon: "✨",
+    image: homeCleaningImage,
+    description: "Complete home cleaning solution."
+  },
+  {
+    title: "Corporate Cleaning",
+    icon: "🏢",
+    image: corporateCleaningImage,
+    description: "Office and commercial cleaning."
+  },
+  {
+    title: "Sofa Cleaning",
+    icon: "🛋️",
+    image: sofaCleaningImage,
+    description: "Deep sofa cleaning service."
+  }
 ];
 
+export default function Services() {
+  const navigate = useNavigate();
 
-export default function Services(){
+  return (
+    <section className="services-section">
 
-return (
+      <h2>Our Services</h2>
 
-<section className="services-section">
+      <Swiper
+        className="services-swiper"
+        modules={[Autoplay, Pagination, Navigation]}
+        navigation={true}
+        spaceBetween={25}
+        loop={true}
+        speed={800}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false
+        }}
+        pagination={{
+          clickable: true
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 4
+          }
+        }}
+      >
+        {services.map((service) => (
+          <SwiperSlide key={service.title}>
+            <div className="service-card">
 
+              <div className="image-box">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                />
+              </div>
 
-<h2>
-Our Services
-</h2>
+              <div className="service-content">
 
+                <h3>
+                  <span className="service-icon">
+                    {service.icon}
+                  </span>
+                  {service.title}
+                </h3>
 
-<Swiper
+                <p>{service.description}</p>
 
-className="services-swiper"
+                <button>
+                  Book Now
+                </button>
 
-modules={[
-Autoplay,
-Pagination,
-Navigation
-]}
+              </div>
 
-navigation={true}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-spaceBetween={25}
+      <div className="services-action">
+        <button
+          className="view-all-btn"
+          onClick={() => navigate("/services")}
+        >
+          View All Services →
+        </button>
+      </div>
 
-loop={true}
-
-speed={800}
-
-autoplay={{
-delay:2000,
-disableOnInteraction:false
-}}
-
-pagination={{
-clickable:true
-}}
-
-breakpoints={{
-
-0:{
-slidesPerView:1
-},
-
-768:{
-slidesPerView:2
-},
-
-1024:{
-slidesPerView:4
-}
-
-}}
-
->
-
-
-{
-services.map((service)=>(
-
-
-<SwiperSlide key={service.title}>
-
-
-<div className="service-card">
-
-
-<div className="image-box">
-
-<img
-src={service.image}
-alt={service.title}
-/>
-
-</div>
-
-
-
-<div className="service-content">
-
-
-<h3>
-
-<span className="service-icon">
-{service.icon}
-</span>
-
-{service.title}
-
-</h3>
-
-
-<p>
-{service.description}
-</p>
-
-
-<button>
-Book Now
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</SwiperSlide>
-
-
-))
-
-}
-
-
-</Swiper>
-
-
-</section>
-
-)
-
+    </section>
+  );
 }

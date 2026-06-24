@@ -1,18 +1,16 @@
 import "./About.css";
 import aboutImage from "../../assets/images/About.png";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+  const navigate = useNavigate();
+
   return (
     <section className="about-section">
-
-      <h2 className="about-heading">
-        About Us
-      </h2>
+      <h2 className="about-heading">About Us</h2>
 
       <div className="about-container">
-
         <div className="about-content">
-
           <p>
             Clean N Dry is a trusted laundry and dry cleaning brand
             delivering premium fabric care through advanced cleaning
@@ -25,7 +23,6 @@ export default function About() {
           </p>
 
           <div className="about-stats">
-
             <div className="stat">
               <h3>15+</h3>
               <span>Service Points</span>
@@ -40,20 +37,20 @@ export default function About() {
               <h3>100%</h3>
               <span>Quality Focus</span>
             </div>
-
           </div>
 
+          <button
+            className="about-btn"
+            onClick={() => navigate("/about")}
+          >
+            Learn More
+          </button>
         </div>
 
         <div className="about-image">
-          <img
-            src={aboutImage}
-            alt="Clean N Dry"
-          />
+          <img src={aboutImage} alt="Clean N Dry" />
         </div>
-
       </div>
-
     </section>
   );
 }

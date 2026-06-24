@@ -7,11 +7,14 @@ import ContactPage from '../pages/Contact';
 import ProcessPage from '../pages/ProcessPage';
 import WhyChooseUsPage from '../pages/WhyChooseUsPage';
 import NotFound from '../pages/NotFound';
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
