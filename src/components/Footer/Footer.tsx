@@ -49,7 +49,7 @@ export default function Footer() {
           <span>📍 Cuttack, Odisha</span>
 
           <span>
-            📞
+            📞{" "}
             <a href="tel:+917609851051">
               +91 7609851051
             </a>
@@ -65,26 +65,39 @@ export default function Footer() {
               <span className="whatsapp-icon-wrapper">
                 <FaWhatsapp />
               </span>
-
               Chat on WhatsApp
             </a>
           </span>
 
         </div>
 
+        {/* SOCIAL ICONS */}
+
         <div className="footer-social">
 
-          <a href="#" aria-label="Facebook">
+          <button
+            type="button"
+            className="social-btn"
+            aria-label="Facebook"
+          >
             <FaFacebookF />
-          </a>
+          </button>
 
-          <a href="#" aria-label="Twitter">
+          <button
+            type="button"
+            className="social-btn"
+            aria-label="Twitter"
+          >
             <FaTwitter />
-          </a>
+          </button>
 
-          <a href="#" aria-label="LinkedIn">
+          <button
+            type="button"
+            className="social-btn"
+            aria-label="LinkedIn"
+          >
             <FaLinkedinIn />
-          </a>
+          </button>
 
         </div>
 
@@ -97,8 +110,13 @@ export default function Footer() {
         </span>
 
         <div className="footer-bottom-links">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms">Terms & Conditions</a>
+          <a href="/privacy-policy">
+            Privacy Policy
+          </a>
+
+          <a href="/terms">
+            Terms & Conditions
+          </a>
         </div>
 
       </div>
