@@ -25,6 +25,7 @@ export default function Process() {
 
         {/* CONTENT */}
         <div className="better-content">
+
           <h2 className="better-title">
             What Makes Us Better Than Others
           </h2>
@@ -32,41 +33,57 @@ export default function Process() {
           <ul className="better-list">
 
             <li>
-              <FaTruck className="better-icon" />
+              <div className="better-icon truck">
+                <FaTruck />
+              </div>
+
               <span className="better-text">
                 Free Pickup & Delivery
               </span>
             </li>
 
             <li>
-              <FaMoneyBillWave className="better-icon" />
+              <div className="better-icon money">
+                <FaMoneyBillWave />
+              </div>
+
               <span className="better-text">
                 Transparent Pricing
               </span>
             </li>
 
             <li>
-              <FaMobileAlt className="better-icon" />
+              <div className="better-icon mobile">
+                <FaMobileAlt />
+              </div>
+
               <span className="better-text">
                 Real-Time Order Tracking
               </span>
             </li>
 
             <li>
-              <FaTshirt className="better-icon" />
+              <div className="better-icon garment">
+                <FaTshirt />
+              </div>
+
               <span className="better-text">
                 Quality Assurance & Garment Care
               </span>
             </li>
 
             <li>
-              <FaHeadset className="better-icon" />
+              <div className="better-icon support">
+                <FaHeadset />
+              </div>
+
               <span className="better-text">
                 Dedicated Customer Support
               </span>
             </li>
 
           </ul>
+
         </div>
 
       </div>

@@ -24,27 +24,37 @@ export default function Delivery() {
 
             <li>
               <span className="tick">✓</span>
-              Free Pickup & Delivery
+              <span className="best-text">
+                Free Pickup & Delivery
+              </span>
             </li>
 
             <li>
               <span className="tick">✓</span>
-              Fabric Safe Cleaning
+              <span className="best-text">
+                Fabric Safe Cleaning
+              </span>
             </li>
 
             <li>
               <span className="tick">✓</span>
-              Quick Turnaround Time
+              <span className="best-text">
+                Quick Turnaround Time
+              </span>
             </li>
 
             <li>
               <span className="tick">✓</span>
-              Affordable Pricing
+              <span className="best-text">
+                Affordable Pricing
+              </span>
             </li>
 
             <li>
               <span className="tick">✓</span>
-              100% Customer Satisfaction
+              <span className="best-text">
+                100% Customer Satisfaction
+              </span>
             </li>
 
           </ul>
