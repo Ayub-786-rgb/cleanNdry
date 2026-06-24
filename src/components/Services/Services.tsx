@@ -124,7 +124,13 @@ export default function Services() {
 
                 <p>{service.description}</p>
 
-                <button>
+                <button
+                onClick={() =>
+          window.open(
+            "https://app.fabklean.com/",
+            "_blank"
+          )
+        }>
                   Book Now
                 </button>
 

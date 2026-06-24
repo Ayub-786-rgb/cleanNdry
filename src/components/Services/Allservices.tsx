@@ -134,8 +134,15 @@ alt={service.title}
 </p>
 
 
-<button>
-Book Now
+<button
+  onClick={() =>
+    window.open(
+      "https://app.fabklean.com/",
+      "_blank"
+    )
+  }
+>
+  Book Now
 </button>
 
 

@@ -7,6 +7,15 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
+
+  const phone = "917609851051";
+
+  const prefilledMessage = encodeURIComponent(
+    "Hello Clean N Dry, I'd like to schedule a pickup for my laundry."
+  );
+
+  const whatsappLink = `https://wa.me/${phone}?text=${prefilledMessage}`;
+
   return (
     <footer className="footer">
 
@@ -57,7 +66,7 @@ export default function Footer() {
 
           <span>
             <a
-              href="https://wa.me/917609851051"
+              href={whatsappLink}
               target="_blank"
               rel="noreferrer"
               className="footer-whatsapp-link"
@@ -65,13 +74,12 @@ export default function Footer() {
               <span className="whatsapp-icon-wrapper">
                 <FaWhatsapp />
               </span>
+
               Chat on WhatsApp
             </a>
           </span>
 
         </div>
-
-        {/* SOCIAL ICONS */}
 
         <div className="footer-social">
 
@@ -110,6 +118,7 @@ export default function Footer() {
         </span>
 
         <div className="footer-bottom-links">
+
           <a href="/privacy-policy">
             Privacy Policy
           </a>
@@ -117,6 +126,7 @@ export default function Footer() {
           <a href="/terms">
             Terms & Conditions
           </a>
+
         </div>
 
       </div>
