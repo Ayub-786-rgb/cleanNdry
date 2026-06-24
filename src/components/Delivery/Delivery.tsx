@@ -20,9 +20,8 @@ export default function Delivery() {
             Best Dry Cleaners In Your City
           </h2>
 
-
-
           <ul className="best-list">
+
             <li>
               <span className="tick">✓</span>
               Free Pickup & Delivery
@@ -47,6 +46,7 @@ export default function Delivery() {
               <span className="tick">✓</span>
               100% Customer Satisfaction
             </li>
+
           </ul>
 
         </div>

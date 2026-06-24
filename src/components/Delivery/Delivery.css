@@ -54,14 +54,7 @@
   line-height: 1.15;
   font-weight: 800;
   color: #0f4c81;
-  margin-bottom: 22px;
-}
-
-.best-subtext {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #64748b;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 /* LIST */
@@ -78,7 +71,7 @@
   gap: 14px;
 
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   color: #334155;
 
   margin-bottom: 18px;
@@ -87,6 +80,7 @@
 .tick {
   width: 30px;
   height: 30px;
+  min-width: 30px;
 
   display: flex;
   align-items: center;
@@ -124,21 +118,26 @@
   .best-content {
     order: 2;
     height: auto;
-    text-align: center;
     align-items: center;
+  }
+
+  .best-title {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .best-list {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .best-list li {
+    justify-content: flex-start;
   }
 
   .best-image {
     max-width: 650px;
     height: auto;
-  }
-
-  .best-title {
-    font-size: 42px;
-  }
-
-  .best-list li {
-    justify-content: center;
   }
 }
 
@@ -151,20 +150,33 @@
 
   .best-title {
     font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
-  .best-subtext {
-    font-size: 16px;
-    line-height: 1.7;
+  .best-list {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .best-list li {
+    justify-content: flex-start;
+    align-items: center;
+
     font-size: 15px;
+    font-weight: 600;
+
+    text-align: left;
+
+    margin-bottom: 14px;
   }
 
   .tick {
     width: 26px;
     height: 26px;
+    min-width: 26px;
+
     font-size: 12px;
   }
 
