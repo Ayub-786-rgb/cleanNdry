@@ -3,8 +3,8 @@ import curtainImage from '../../assets/images/curtain.png';
 import shoeImage from '../../assets/images/shoe_cleaning.png';
 import carpetImage from '../../assets/images/carpet.png';
 import dryCleaningImage from '../../assets/images/drycleaning.png';
-import homeCleaningImage from '../../assets/images/homecleaning.jpg';
-import corporateCleaningImage from '../../assets/images/office.jpg';
+import bagCleaningImage from '../../assets/images/bag.jpg';
+import toyCleaningImage from '../../assets/images/toy.png';
 import sofaCleaningImage from '../../assets/images/sofacleaning.jpg';
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -49,16 +49,16 @@ const services = [
     description: "Safe dry cleaning for your clothes."
   },
   {
-    title: "Home Cleaning",
-    icon: "✨",
-    image: homeCleaningImage,
-    description: "Complete home cleaning solution."
+    title: "Bag Cleaning",
+    icon: "👜",
+    image: bagCleaningImage,
+    description: "Complete bag cleaning solution."
   },
   {
-    title: "Corporate Cleaning",
-    icon: "🏢",
-    image: corporateCleaningImage,
-    description: "Office and commercial cleaning."
+    title: "Soft Toys Cleaning",
+    icon: "🧸",
+    image: toyCleaningImage,
+    description: "Professional soft toys cleaning service."
   },
   {
     title: "Sofa Cleaning",

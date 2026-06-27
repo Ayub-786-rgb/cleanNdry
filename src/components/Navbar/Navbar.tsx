@@ -3,6 +3,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FaCalendarAlt } from 'react-icons/fa';
 import './Navbar.css';
 
+// Import your logo
+import logo from "../../assets/images/logo.png";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
@@ -14,7 +17,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       {/* LOGO */}
-      <div className="logo">Clean N Dry</div>
+      <div className="logo">
+        <img src={logo} alt="Clean N Dry Logo" className="navbar-logo-img" />
+      </div>
 
       {/* HAMBURGER (mobile only via CSS) */}
       <button
@@ -30,25 +35,27 @@ export default function Navbar() {
       {/* MENU */}
       <ul className={`menu ${open ? 'open' : ''}`}>
         <li>
-          <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
-            Home
+          <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Services
           </NavLink>
         </li>
-
         <li>
-         <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
-          Services
-         </NavLink>
+          <NavLink to="/pricing" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Pricing
+          </NavLink>
         </li>
-
-         <li>
-         <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-          About Us
-         </NavLink>
-        </li>
-
         <li>
-          <NavLink to="/benefits" className={({ isActive }) => (isActive ? 'active' : '')}>
+          <NavLink to="/locations" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Store Locators
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/franchise" className={({ isActive }) => (isActive ? 'active' : '')}>
+            Get Franchise
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/blogs" className={({ isActive }) => (isActive ? 'active' : '')}>
             Blogs
           </NavLink>
         </li>
@@ -56,7 +63,12 @@ export default function Navbar() {
 
       {/* ACTION BUTTON */}
       <div className="actions">
-        <button className="btn" onClick={() => window.open('https://app.fabklean.com/', '_blank')}><FaCalendarAlt style={{ marginRight: 8 }} />Schedule Free Pickup</button>
+        <button
+          className="btn"
+          onClick={() => window.open('https://app.fabklean.com/', '_blank')}
+        >
+          <FaCalendarAlt style={{ marginRight: 8 }} />Schedule Free Pickup
+        </button>
       </div>
     </nav>
   );

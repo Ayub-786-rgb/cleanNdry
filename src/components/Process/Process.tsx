@@ -1,5 +1,5 @@
 import "./Process.css";
-import betterVisual from "../../assets/images/betterthan.png";
+import betterVisual from "../../assets/images/bettenthans.jpeg";
 
 import {
   FaTruck,

@@ -3,8 +3,8 @@ import curtainImage from '../../assets/images/curtain.png';
 import shoeImage from '../../assets/images/shoe_cleaning.png';
 import carpetImage from '../../assets/images/carpet.png';
 import dryCleaningImage from '../../assets/images/drycleaning.png';
-import homeCleaningImage from '../../assets/images/homecleaning.jpg';
-import corporateCleaningImage from '../../assets/images/office.jpg';
+import bagCleaningImage from '../../assets/images/bag.jpg';
+import toyCleaningImage from '../../assets/images/toy.png';
 import sofaCleaningImage from '../../assets/images/sofacleaning.jpg';
 
 import "./Allservices.css";
@@ -48,17 +48,17 @@ description:"Safe dry cleaning for your clothes."
 },
 
 {
-title:"Home Cleaning",
-icon:"✨",
-image:homeCleaningImage,
+title:"Bag Cleaning",
+icon:"👜",
+image:bagCleaningImage,
 description:"Complete home cleaning solution."
 },
 
 {
-title:"Corporate Cleaning",
-icon:"🏢",
-image:corporateCleaningImage,
-description:"Office and commercial cleaning."
+title:"Soft Toys Cleaning",
+icon:"🧸",
+image:toyCleaningImage,
+description:"Professional soft toys cleaning service."
 },
 
 {

@@ -1,136 +1,106 @@
 import "./Footer.css";
 import {
-  FaWhatsapp,
   FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
   FaTwitter,
-  FaLinkedinIn
+  FaWhatsapp,
+  FaPhoneAlt,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
 
+  // WhatsApp setup
   const phone = "917609851051";
-
   const prefilledMessage = encodeURIComponent(
     "Hello Clean N Dry, I'd like to schedule a pickup for my laundry."
   );
-
   const whatsappLink = `https://wa.me/${phone}?text=${prefilledMessage}`;
+
+  const quickLinks = [
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Near Me", path: "/locations" },
+    { name: "Blog", path: "/blogs" },
+    { name: "Franchise", path: "/franchise" },
+    { name: "Deep Cleaning", path: "/services/deep-cleaning" },
+    { name: "Terms & Conditions", path: "/terms" },
+    { name: "Privacy Policy", path: "/privacy" },
+    { name: "Careers", path: "/careers" },
+    { name: "Contact Us", path: "/contact" },
+  ];
+
+  const cities = [
+    "Angul","Bengaluru","Pune","Delhi","Indore","Cochin","Kolkata","Patna","Jamshedpur",
+    "Hyderabad","Rajamundary","Durgapur","Ujjain","Udaipur","Ranchi",
+  ];
 
   return (
     <footer className="footer">
-
-      <div className="footer-section">
-        <h3 className="footer-title">Clean N Dry</h3>
-
-        <p>
-          Professional laundry and dry cleaning services with free pickup
-          and doorstep delivery. Experience quality, convenience and care
-          at competitive prices.
-        </p>
+      {/* ================= TOP NAVIGATION ================= */}
+      <div className="footer-nav">
+        {quickLinks.map((item) => (
+          <NavLink key={item.name} to={item.path}>
+            {item.name}
+          </NavLink>
+        ))}
       </div>
 
-      <div className="footer-section">
-        <h4 className="footer-title">Quick Links</h4>
-
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-        </ul>
+      {/* ================= TAGLINE ================= */}
+      <div className="footer-tagline">
+        <h2>
+          SMARTER <span>•</span> CLEANER <span>•</span> GREENER
+        </h2>
       </div>
 
-      <div className="footer-section">
-        <h4 className="footer-title">Service Areas</h4>
-
-        <ul>
-          <li>Cuttack</li>
-          <li>Bhubaneswar</li>
-          <li>Nearby Locations</li>
-        </ul>
-      </div>
-
-      <div className="footer-section">
-        <h4 className="footer-title">Contact</h4>
-
-        <div className="footer-contact">
-
-          <span>📍 Cuttack, Odisha</span>
-
-          <span>
-            📞{" "}
-            <a href="tel:+917609851051">
-              +91 7609851051
-            </a>
-          </span>
-
-          <span>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-              className="footer-whatsapp-link"
-            >
-              <span className="whatsapp-icon-wrapper">
-                <FaWhatsapp />
-              </span>
-
-              Chat on WhatsApp
-            </a>
-          </span>
-
+      {/* ================= CITY GRID ================= */}
+      <div className="footer-cities">
+        <h3>
+          Clean N Dry: India’s Trusted Laundry & Dry Cleaning Network
+        </h3>
+        <div className="cities-grid">
+          {cities.map((city) => (
+            <NavLink key={city} to={`/locations/${city.toLowerCase()}`}>
+              {city}
+            </NavLink>
+          ))}
         </div>
-
-        <div className="footer-social">
-
-          <button
-            type="button"
-            className="social-btn"
-            aria-label="Facebook"
-          >
-            <FaFacebookF />
-          </button>
-
-          <button
-            type="button"
-            className="social-btn"
-            aria-label="Twitter"
-          >
-            <FaTwitter />
-          </button>
-
-          <button
-            type="button"
-            className="social-btn"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedinIn />
-          </button>
-
-        </div>
-
       </div>
 
+      {/* ================= BRANDING & SOCIAL ================= */}
       <div className="footer-bottom">
+        <div className="footer-brand">
+          <div className="footer-logo">
+            <img
+              src={logo}
+              alt="Clean N Dry Logo"
+              className="footer-logo-img"
+            />
+          </div>
 
-        <span>
-          © 2026 Clean N Dry — All Rights Reserved
-        </span>
+          <p>
+            Professional laundry and dry‑cleaning services with free pickup and
+            doorstep delivery — quality, convenience, and care.
+          </p>
 
-        <div className="footer-bottom-links">
-
-          <a href="/privacy-policy">
-            Privacy Policy
-          </a>
-
-          <a href="/terms">
-            Terms & Conditions
-          </a>
-
+          <div className="footer-social">
+            <a href="https://facebook.com" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="tel:+917609851051" aria-label="Phone"><FaPhoneAlt /></a>
+          </div>
         </div>
-
       </div>
 
+      {/* ================= COPYRIGHT ================= */}
+      <div className="footer-copyright">
+        <p>© {year} Clean N Dry — All Rights Reserved</p>
+      </div>
     </footer>
   );
 }

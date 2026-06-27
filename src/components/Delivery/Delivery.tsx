@@ -1,5 +1,5 @@
 import "./Delivery.css";
-import bestImage from "../../assets/images/BestDrycleaning.png";
+import bestImage from "../../assets/images/BestDrycleanings.jpeg";
 
 export default function Delivery() {
   return (
@@ -39,14 +39,14 @@ export default function Delivery() {
             <li>
               <span className="tick">✓</span>
               <span className="best-text">
-                Quick Turnaround Time
+                Express Service in 24 Hours
               </span>
             </li>
 
             <li>
               <span className="tick">✓</span>
               <span className="best-text">
-                Affordable Pricing
+                Premium Service in best Pricing
               </span>
             </li>
 

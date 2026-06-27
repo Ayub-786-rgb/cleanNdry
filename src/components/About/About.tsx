@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutImage from "../../assets/images/About.png";
+import aboutImage from "../../assets/images/Abouts.jpeg";
 import { useNavigate } from "react-router-dom";
 
 export default function About() {
@@ -29,8 +29,13 @@ export default function About() {
             </div>
 
             <div className="stat">
-              <h3>10K+</h3>
+              <h3>25K+</h3>
               <span>Garments Cleaned</span>
+            </div>
+
+            <div className="stat">
+              <h3>5K+</h3>
+              <span>Happy Customers</span>
             </div>
 
             <div className="stat">

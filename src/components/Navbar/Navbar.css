@@ -4,22 +4,26 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 4%;
-  background: #0b234a;
+  background: linear-gradient(90deg, #0b234a, #102d5c); /* subtle gradient */
   color: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-
   position: relative;
-  overflow: visible;
   z-index: 1000;
 }
 
 /* LOGO */
 .logo {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1;
-  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.navbar-logo-img {
+  height: 42px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.navbar-logo-img:hover {
+  transform: scale(1.05);
 }
 
 /* MENU */
@@ -46,7 +50,6 @@
   padding: 8px 6px;
   transition: color 0.3s ease;
 }
-
 .menu a:hover,
 .link-btn:hover {
   color: #ffffff;
@@ -65,7 +68,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 10px 18px;
   border-radius: 8px;
   border: none;
@@ -74,10 +76,8 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
-
   transition: background 0.3s ease;
 }
-
 .actions .btn:hover {
   background: #184db0;
 }
@@ -93,7 +93,6 @@
   cursor: pointer;
   padding: 0;
 }
-
 .hamburger span {
   width: 25px;
   height: 3px;
@@ -101,16 +100,13 @@
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
 /* Hamburger animation */
 .hamburger.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -120,50 +116,37 @@
   .hamburger {
     display: flex;
   }
-
   .actions {
     display: none;
   }
-
   .menu {
     display: none;
-
     position: absolute;
     top: 64px;
     left: 0;
     right: 0;
-
     width: 100%;
-
     flex-direction: column;
     align-items: center;
     gap: 0;
-
     background: #0b234a;
-
     padding: 12px 0;
-
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
     z-index: 999;
   }
-
   .menu.open {
     display: flex;
   }
-
   .menu li {
     width: 100%;
     text-align: center;
   }
-
   .menu a {
     display: block;
     width: 100%;
     padding: 16px;
     color: #fff;
   }
-
   .menu a.active {
     border-bottom: none;
     background: rgba(255, 255, 255, 0.08);
