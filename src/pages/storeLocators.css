@@ -1,0 +1,155 @@
+.store-locator {
+  background: linear-gradient(to bottom right, #f8fff8, #e8f5e9);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+  color: #0b234a;
+  font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #6b7a8f;
+  margin-bottom: 10px;
+}
+
+.separator {
+  margin: 0 5px;
+  color: #6b7a8f;
+}
+
+.locator-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #eaf3ff;
+  color: #0b234a;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.locator-icon {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.locator-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.results {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.store-card {
+  background: #fff;
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.locator-logo {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+
+.store-card:hover {
+  transform: translateY(-4px);
+}
+
+.store-card h3 {
+  margin-bottom: 10px;
+  color: #0b234a;
+}
+
+.store-card p {
+  margin: 6px 0;
+  color: #4a5a6a;
+}
+
+.store-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.store-card a:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  margin-top: 20px;
+  color: #888;
+  font-style: italic;
+}
+
+
+.highlight {
+  color: #0b234a;
+}
+
+.locator-description {
+  font-size: 16px;
+  color: #4a5a6a;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #cce0ff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  color: #007bff;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #0b234a;
+}
+
+.search-input::placeholder {
+  color: #9aaabf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .locator-title {
+    font-size: 28px;
+  }
+
+  .locator-description {
+    font-size: 14px;
+  }
+
+  .search-bar {
+    max-width: 90%;
+  }
+}

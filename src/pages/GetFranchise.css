@@ -1,0 +1,102 @@
+.franchise-section {
+  padding: 80px 8%;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.franchise-header {
+  margin-bottom: 40px;
+}
+
+.franchise-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.franchise-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f4c81; /* brand blue */
+  margin-top: 12px;
+  letter-spacing: 0.5px;
+}
+
+.franchise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.franchise-card {
+  background: #fff;
+  border: 2px solid #e2e8f0; /* always visible border */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect enhances border color and shadow */
+.franchise-card:hover {
+  border-color: #0f4c81;
+  box-shadow: 0 12px 24px rgba(15, 76, 129, 0.15);
+  transform: translateY(-6px);
+}
+
+.franchise-card h3 {
+  color: #0f4c81;
+  margin-bottom: 12px;
+}
+
+.franchise-card p,
+.franchise-card ul {
+  color: #334155;
+  font-size: 15px;
+}
+
+.franchise-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.franchise-card li {
+  margin-bottom: 6px;
+}
+
+/* Center the 4th card but keep same width */
+.franchise-card:nth-child(4) {
+  justify-self: center;
+}
+
+.franchise-cta {
+  margin-top: 40px;
+}
+
+.franchise-contact-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f4c81; /* brand blue */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+.btn-primary {
+  background: #0f4c81;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none; /* ensures link looks like button */
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}

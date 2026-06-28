@@ -6,6 +6,7 @@ import Delivery from "../components/Delivery/Delivery";
 import Footer from "../components/Footer/Footer";
 import WhatsappButton from "../components/WhatsappButton/WhatsappButton";
 import About from "../components/About/About";
+import Review from './Review'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Process />
       <Delivery />
       <About />
+      <Review />
       <Footer />
       <WhatsappButton />
     </>

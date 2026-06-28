@@ -16,7 +16,7 @@ export default function About() {
             delivering premium fabric care through advanced cleaning
             technology and doorstep convenience. With
             <strong> 15+ Service Points</strong>,
-            <strong> 10,000+ Garments Processed</strong>, and a growing
+            <strong> 25,000+ Garments Processed</strong>, and a growing
             community of satisfied customers, we are committed to
             providing reliable, hygienic, and high-quality cleaning
             solutions every day.

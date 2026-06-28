@@ -1,0 +1,72 @@
+.careers-section {
+  padding: 80px 8%;
+  background: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+.careers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.careers-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.careers-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f4c81;
+}
+
+.job-card {
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  border-color: #0f4c81;
+  box-shadow: 0 12px 24px rgba(15,76,129,0.15);
+  transform: translateY(-6px);
+}
+
+.job-card h2 {
+  color: #0f4c81;
+  margin-bottom: 10px;
+}
+
+.job-location, .job-experience {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.job-card h3 {
+  margin-top: 20px;
+  color: #0f4c81;
+}
+
+.job-card ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #334155;
+}
+
+.job-cta {
+  margin-top: 20px;
+  background: #f1f5f9;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.job-contact-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f4c81;
+  margin-bottom: 8px;
+}

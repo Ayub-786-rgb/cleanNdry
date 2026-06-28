@@ -136,6 +136,23 @@
   font-size: 14px;
 }
 
+.footer-apps {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.app-badge {
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.app-badge:hover {
+  transform: scale(1.05);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .footer-bottom {

@@ -1,0 +1,58 @@
+.reviews-section {
+  padding: 80px 8%;
+  background: #f8fafc;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviews-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 40px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-icon {
+  color: #0f4c81;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.review-text {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.review-stars {
+  color: #0f4c81;
+  margin-bottom: 12px;
+}
+
+.star-icon {
+  margin: 0 2px;
+}
+
+.review-name {
+  font-weight: 600;
+  color: #1e293b;
+}
