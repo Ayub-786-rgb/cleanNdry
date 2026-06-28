@@ -94,9 +94,15 @@
   margin-bottom: 10px;
 }
 .footer-logo-img {
-  height: 70px;
+  height: 170px;   /* increase from 70px */
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
+
+.footer-logo-img:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
+
 .footer-brand p {
   color: #cbd5e1;
   font-size: 15px;

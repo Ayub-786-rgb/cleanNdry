@@ -1,15 +1,7 @@
-import laundryImage from '../../assets/images/laundry.png';
-import curtainImage from '../../assets/images/curtain.png';
-import shoeImage from '../../assets/images/shoe_cleaning.png';
-import carpetImage from '../../assets/images/carpet.png';
-import dryCleaningImage from '../../assets/images/drycleaning.png';
-import bagCleaningImage from '../../assets/images/bag.jpg';
-import toyCleaningImage from '../../assets/images/toy.png';
-import sofaCleaningImage from '../../assets/images/sofacleaning.jpg';
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
+import { services } from "../../data/Services";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,56 +9,7 @@ import "swiper/css/navigation";
 
 import "./Services.css";
 
-const services = [
-  {
-    title: "Laundry",
-    icon: "🧺",
-    image: laundryImage,
-    description: "Fast wash and fold service with pickup and delivery."
-  },
-  {
-    title: "Carpet Cleaning",
-    icon: "🧹",
-    image: carpetImage,
-    description: "Deep carpet cleaning for fresh interiors."
-  },
-  {
-    title: "Curtain Cleaning",
-    icon: "🏠",
-    image: curtainImage,
-    description: "Professional curtain cleaning service."
-  },
-  {
-    title: "Shoe Cleaning",
-    icon: "👟",
-    image: shoeImage,
-    description: "Premium shoe cleaning and care."
-  },
-  {
-    title: "Dry Cleaning",
-    icon: "👔",
-    image: dryCleaningImage,
-    description: "Safe dry cleaning for your clothes."
-  },
-  {
-    title: "Bag Cleaning",
-    icon: "👜",
-    image: bagCleaningImage,
-    description: "Complete bag cleaning solution."
-  },
-  {
-    title: "Soft Toys Cleaning",
-    icon: "🧸",
-    image: toyCleaningImage,
-    description: "Professional soft toys cleaning service."
-  },
-  {
-    title: "Sofa Cleaning",
-    icon: "🛋️",
-    image: sofaCleaningImage,
-    description: "Deep sofa cleaning service."
-  }
-];
+
 
 export default function Services() {
   const navigate = useNavigate();

@@ -4,7 +4,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import "./Navbar.css";
 
 // Import your logo
-import logo from "../../assets/images/logob.png";
+import logo from "../../assets/images/logof.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/blogs" className={({ isActive }) => (isActive ? "active" : "")}>
+          <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "")}>
             Blogs
           </NavLink>
         </li>

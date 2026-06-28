@@ -53,10 +53,10 @@ const StoreLocator: React.FC = () => {
               <p><strong>Area:</strong> {loc.area}</p>
               <p><strong>Address:</strong> {loc.address}</p>
               <p><strong>Timings:</strong> {loc.timings}</p>
-              <p>
-                <FaPhone style={{ marginRight: 6 }} />
-                <a href={`tel:${loc.phone}`}>{loc.phone}</a>
-              </p>
+             <p>
+  <FaPhone style={{ marginRight: 6, transform: "rotate(90deg)" }} />
+  <a href={`tel:${loc.phone}`}>{loc.phone}</a>
+</p>
             </div>
           ))
         ) : (

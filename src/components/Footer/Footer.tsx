@@ -8,7 +8,7 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logob.png";
+import logo from "../../assets/images/logof.png";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -24,7 +24,7 @@ export default function Footer() {
     { name: "Services", path: "/services" },
     { name: "Pricing", path: "/pricing" },
     { name: "Near Me", path: "/store" },
-    { name: "Blog", path: "/blogs" },
+    { name: "Blogs", path: "/blog" },
     { name: "Franchise", path: "/franchise" },
     { name: "Terms & Conditions", path: "/terms" },
     { name: "Privacy Policy", path: "/privacy" },

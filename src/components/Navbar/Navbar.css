@@ -18,7 +18,7 @@
   align-items: center;
 }
 .navbar-logo-img {
-  height: 42px;
+  height: 150px;
   object-fit: contain;
   transition: transform 0.3s ease;
   background: transparent; /* ✅ transparent so gradient shows through */
