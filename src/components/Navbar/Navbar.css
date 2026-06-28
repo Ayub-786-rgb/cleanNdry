@@ -21,6 +21,7 @@
   height: 42px;
   object-fit: contain;
   transition: transform 0.3s ease;
+  background: transparent; /* ✅ transparent so gradient shows through */
 }
 .navbar-logo-img:hover {
   transform: scale(1.05);

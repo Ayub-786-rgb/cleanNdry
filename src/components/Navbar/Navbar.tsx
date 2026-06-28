@@ -4,7 +4,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 import './Navbar.css';
 
 // Import your logo
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logob.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,9 +17,13 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       {/* LOGO */}
-      <div className="logo">
-        <img src={logo} alt="Clean N Dry Logo" className="navbar-logo-img" />
-      </div>
+    <NavLink to="/" className="logo">
+  <img
+    src={logo}
+    alt="Clean N Dry Logo"
+    className="navbar-logo-img"
+  />
+</NavLink>
 
       {/* HAMBURGER (mobile only via CSS) */}
       <button
