@@ -4,7 +4,7 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Process from "../components/Process/Process";
 import Delivery from "../components/Delivery/Delivery";
 import Footer from "../components/Footer/Footer";
-import WhatsappButton from "../components/WhatsappButton/WhatsappButton";
+import FloatingActions from "../components/WhatsappButton/FloatingActions";
 import About from "../components/About/About";
 import Review from './Review'
 
@@ -19,7 +19,7 @@ export default function Home() {
       <About />
       <Review />
       <Footer />
-      <WhatsappButton />
+      <FloatingActions />
     </>
   );
 }

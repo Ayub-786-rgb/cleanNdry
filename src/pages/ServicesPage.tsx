@@ -1,13 +1,13 @@
 import AllServices from '../components/Services/Allservices';
 import Footer from '../components/Footer/Footer';
-import WhatsappButton from "../components/WhatsappButton/WhatsappButton";
+import FloatingActions from "../components/WhatsappButton/FloatingActions";
 
 
 export default function ServicesPage() {
   return (
     <>
       <AllServices />
-      <WhatsappButton />
+      <FloatingActions />
 
       <Footer />
     </>
