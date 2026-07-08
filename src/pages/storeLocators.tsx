@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./storeLocators.css";
 import { FaMapMarkerAlt, FaSearch, FaPhone } from "react-icons/fa";
 import { storeLocations, StoreLocation } from "../data/storeLocators";
@@ -6,13 +6,30 @@ import Footer from '../components/Footer/Footer';
 
 const StoreLocator: React.FC = () => {
   const [query, setQuery] = useState("");
+  const [filteredLocations, setFilteredLocations] = useState<StoreLocation[]>([]);
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Filter locations by city, state, or area
-  const filteredLocations = storeLocations.filter((loc: StoreLocation) =>
-    `${loc.city} ${loc.state} ${loc.area}`
-      .toLowerCase()
-      .includes(query.toLowerCase())
-  );
+  // Debounced search function - show all data after debounce
+  useEffect(() => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    debounceTimerRef.current = setTimeout(() => {
+      if (query.trim() === "") {
+        setFilteredLocations([]);
+      } else {
+        // Show all existing locations regardless of query
+        setFilteredLocations(storeLocations);
+      }
+    }, 1000); // 1000ms (1 second) debounce delay
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
+  }, [query]);
 
   return (<>
     <section className="store-locator">

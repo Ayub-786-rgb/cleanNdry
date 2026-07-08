@@ -5,7 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Shared wrapper */
+/* =========================
+   Main Wrapper
+========================= */
+
 .pricing-wrapper {
   width: 92%;
   max-width: 1300px;
@@ -16,42 +19,206 @@
   align-items: stretch;
 }
 
-/* Shared image container */
-.pricing-image {
-  position: relative;
-  width: 100%;
+/* =========================
+   Image Card
+========================= */
+
+.pricing-image-card {
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-image {
+  width: 100%;
 }
 
 .pricing-image img {
   width: 100%;
-  height: auto;            /* keep aspect ratio */
-  object-fit: cover;       /* fills container nicely */
-  object-position: center; /* centers the image */
   display: block;
-  border-radius: 15px;
+  object-fit: cover;
 }
 
-/* SECTION 1 (two buttons) */
-.first-image {
-  min-height: 300px; /* taller hero */
-}
-.first-controls {
-  position: absolute;
-  bottom: 70px;
-  left: 30%;
-  transform: translateX(-50%);
+/* =========================
+   Buttons Below Image
+========================= */
+
+.hero-controls {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 12px;
+  padding: 20px;
 }
 
+.hero-controls button {
+  flex: 1;
+  max-width: 220px;
+  height: 45px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0f4c81;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
 
-/* Full-width blue header */
+.hero-controls button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.hero-controls select {
+  flex: 1;
+  max-width: 220px;
+  height: 45px;
+  padding: 0 16px;
+  border: 2px solid #0f4c81;
+  border-radius: 8px;
+  background: #fff url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%230f4c81' d='M7 8l3 3 3-3'/%3e%3c/svg%3e") no-repeat right 10px center;
+  background-size: 18px;
+  color: #0f4c81;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-right: 35px;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.hero-controls select:hover {
+  border-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
+}
+
+.hero-controls select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.1);
+}
+
+.hero-controls select option {
+  background: #fff;
+  color: #0f4c81;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero-controls select option:hover {
+  background: #e8f0f7;
+  color: #0f4c81;
+}
+
+.hero-controls select option:checked {
+  background: linear-gradient(#0f4c81, #0f4c81);
+  background-color: #0f4c81 !important;
+  color: #fff !important;
+}
+
+/* =========================
+   Searchable Location Dropdown
+========================= */
+
+.location-dropdown-wrapper {
+  flex: 1;
+  max-width: 220px;
+  position: relative;
+}
+
+.location-search-input {
+  width: 100%;
+  height: 45px;
+  padding: 0 16px;
+  border: 2px solid #0f4c81;
+  border-radius: 8px;
+  background: #fff;
+  color: #0f4c81;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.location-search-input:hover {
+  border-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
+}
+
+.location-search-input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.1);
+}
+
+.location-search-input::placeholder {
+  color: #0f4c81;
+  opacity: 0.7;
+}
+
+.location-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 2px solid #0f4c81;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.location-option {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #e8f0f7;
+}
+
+.location-option:last-child {
+  border-bottom: none;
+}
+
+.location-option:hover {
+  background: #e8f0f7;
+  padding-left: 20px;
+}
+
+.option-city {
+  font-weight: 600;
+  color: #0f4c81;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.option-area {
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* =========================
+   Blue Header
+========================= */
+
 .blue-header {
   width: 100%;
-  background-color: #0f4c81; /* deep blue */
+  background: #0f4c81;
   padding: 20px 0;
   text-align: center;
 }
@@ -60,63 +227,17 @@
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-  margin: 0;
-  letter-spacing: 1px;
 }
 
+/* =========================
+   Table Cards
+========================= */
 
-/* SECTION 3 (buttons split top/bottom) */
-.third-image {
-  min-height: 300px; /* match section 1 height */
-  position: relative;
-}
-
-/* Top buttons inside image */
-.third-top-controls {
-  position: absolute;
-  top: 1px;
-  left: 45%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 12px;
-}
-
-/* Bottom button inside image */
-.third-bottom-controls {
-  position: absolute;
-  bottom: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-/* Shared button styles */
-.hero-controls button {
-  height: 35px;
-  padding: 0 18px;
-  border: none;
-  border-radius: 8px;
-  background: #0f4c81;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.hero-controls button:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-}
-
-/* Table card styling */
 .pricing-table-card {
-  height: 100%;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 15px;
   background: #f9fafb;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .pricing-table-card h2 {
@@ -127,25 +248,25 @@
   font-weight: 600;
 }
 
-/* Table styling */
+/* =========================
+   Table Styling
+========================= */
+
 table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-collapse: collapse;
 }
 
 thead {
   background: #0f4c81;
 }
+
 thead th {
-  color: white;
+  color: #fff;
   padding: 14px;
   text-align: center;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 tbody td {
@@ -155,66 +276,81 @@ tbody td {
   color: #334155;
   font-size: 14px;
 }
+
 tbody tr:nth-child(even) {
   background: #f7fbff;
 }
+
 tbody tr:hover {
   background: #eef6ff;
 }
+
 tbody td:last-child {
   color: #16a34a;
   font-weight: 700;
 }
 
-/* 2x2 grid section */
+/* =========================
+   2x2 Grid
+========================= */
+
 .extra-tables {
   width: 92%;
   max-width: 1300px;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
-.extra-tables .pricing-table-card {
-  background: #f9fafb;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
+/* =========================
+   Tablet
+========================= */
 
-/* Responsive */
-@media (max-width: 900px) {
-  .pricing-wrapper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .pricing-image {
-    min-height: 250px;
-  }
-  .pricing-table-card {
-    padding: 25px;
-  }
+@media (max-width: 992px) {
+  .pricing-wrapper,
   .extra-tables {
     grid-template-columns: 1fr;
   }
+
+  .pricing-table-card h2 {
+    font-size: 26px;
+  }
+
+  .hero-controls {
+    flex-wrap: wrap;
+  }
+
+  .hero-controls button {
+    flex: 1 1 45%;
+    max-width: none;
+  }
 }
 
+/* =========================
+   Mobile
+========================= */
+
 @media (max-width: 600px) {
-  .first-controls,
-  .third-top-controls,
-  .third-bottom-controls {
-    flex-direction: column;
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-  }
   .pricing-table-card {
-    padding: 18px 12px;
+    padding: 18px;
   }
+
   .pricing-table-card h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
+
   table {
     font-size: 13px;
+  }
+
+  .hero-controls {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-controls button {
+    width: 100%;
+    max-width: 100%;
   }
 }
