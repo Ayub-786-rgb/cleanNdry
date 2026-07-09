@@ -50,7 +50,7 @@ const Careers: React.FC = () => {
           </p>
           <p>
             📧 <a href="mailto:Pritammallik665@gmail.com">Pritammallik665@gmail.com</a><br />
-            📞 <a href="tel:+91XXXXXXXXXX">+91 7609851051</a>
+            📞 <a href="tel:+91XXXXXXXXXX">+91 6372767607</a>
           </p>
         </div>
       </div>

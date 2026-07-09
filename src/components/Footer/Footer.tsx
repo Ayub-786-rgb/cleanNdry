@@ -13,7 +13,7 @@ import logo from "../../assets/images/logof.png";
 export default function Footer() {
   const year = new Date().getFullYear();
 
-  const phone = "917609851051";
+  const phone = "917605990906";
   const prefilledMessage = encodeURIComponent(
     "Hello Clean N Dry, I'd like to schedule a pickup for my laundry."
   );
@@ -82,8 +82,8 @@ export default function Footer() {
           </p>
 
           <div className="footer-social">
-            <a href="https://facebook.com" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.facebook.com/share/19GN8ezobS/" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/clea.ndry?igsh=MTd1cGVodHg4dnN2bw==" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedinIn /></a>
             <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>

@@ -18,7 +18,7 @@ import indiaMap from "../../assets/images/india.png";
 import logo from "../../assets/images/logo.png";
 
 function HeroButtons() {
-    const phone = "917609851051";
+    const phone = "917605990906";
 
     const prefilledMessage = encodeURIComponent(
         "Hello Clean N Dry, I'd like to schedule a pickup for my laundry."

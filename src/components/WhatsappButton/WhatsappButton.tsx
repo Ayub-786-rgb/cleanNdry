@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import './WhatsappButton.css';
 
 export default function WhatsappButton() {
-  const phone = '7609851051';
+  const phone = '917605990906';
   const prefilledMessage = encodeURIComponent("Hello Clean N Dry, I'd like to schedule a pickup for my laundry. ");
   const href = `https://wa.me/${phone}?text=${prefilledMessage}`;
 

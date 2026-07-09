@@ -2,7 +2,7 @@ import { FaPhone } from 'react-icons/fa';
 import './CallButton.css';
 
 export default function CallButton() {
-  const phone = '7609851051';
+  const phone = '6372767607';
   const href = `tel:${phone}`;
 
   return (

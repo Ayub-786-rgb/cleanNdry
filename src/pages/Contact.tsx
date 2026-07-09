@@ -43,7 +43,7 @@ const ContactUs: React.FC = () => {
           <FaPhone className="contact-icon" />
           <h3>Phone</h3>
           <p>
-            <a href="tel:+917609851051">+91 7609851051</a>
+            <a href="tel:+916372767607">+91 6372767607</a>
           </p>
         </div>
       </div>
