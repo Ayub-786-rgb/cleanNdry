@@ -49,8 +49,8 @@ const Careers: React.FC = () => {
             For more details, contact our HR team:
           </p>
           <p>
-            📧 <a href="mailto:Pritammallik665@gmail.com">Pritammallik665@gmail.com</a><br />
-            📞 <a href="tel:+91XXXXXXXXXX">+91 6372767607</a>
+            📧 <a href="mailto:pritammallik665@gmail.com">pritammallik665@gmail.com</a><br />
+            📞 <a href="tel:+916372767607">+91 6372767607</a>
           </p>
         </div>
       </div>
