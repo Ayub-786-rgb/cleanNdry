@@ -87,7 +87,7 @@ export default function Footer() {
             <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedinIn /></a>
             <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
-            <a href="tel:+917609851051" aria-label="Phone"><FaPhoneAlt /></a>
+            <a href="tel:+916372767607" aria-label="Phone"><FaPhoneAlt /></a>
           </div>
 
           {/* ✅ App Store & Play Store badges */}
