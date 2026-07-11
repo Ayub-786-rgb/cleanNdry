@@ -70,7 +70,7 @@ export default function Services() {
                 <button
                 onClick={() =>
           window.open(
-            "https://app.fabklean.com/",
+            "https://app.thecleandry.com/website/W12334",
             "_blank"
           )
         }>

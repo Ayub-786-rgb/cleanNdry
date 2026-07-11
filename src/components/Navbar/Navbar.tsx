@@ -69,7 +69,7 @@ export default function Navbar() {
       <div className="actions">
         <button
           className="btn"
-          onClick={() => window.open("https://app.fabklean.com/", "_blank")}
+          onClick={() => window.open("https://app.thecleandry.com/website/W12334", "_blank")}
         >
           <FaCalendarAlt style={{ marginRight: 8 }} />
           Schedule Free Pickup
